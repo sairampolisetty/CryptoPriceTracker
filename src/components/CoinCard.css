@@ -1,0 +1,16 @@
+.coin-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    width: 25%;
+}
+
+@media screen and (max-width: 768px) {
+    .coin-card{
+        width: 60%;
+    }
+}

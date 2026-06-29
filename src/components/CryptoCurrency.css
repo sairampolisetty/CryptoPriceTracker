@@ -1,0 +1,78 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    text-align: center;
+    background-color: antiquewhite;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+h1{
+    margin: 0px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input{
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid rgb(35, 36, 35);
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.refresh-button{
+    color: white;
+    background-color: rgb(188, 88, 88);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.coin-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.page-buttons{
+    color: white;
+    background-color: rgb(77, 172, 118);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 90px;
+    height: 45px;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.pages{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.currentPage{
+    color: rgb(234, 0, 0);
+}

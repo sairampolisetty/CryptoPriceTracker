@@ -55,7 +55,10 @@ function CryptoCurrency() {
         type="search"
         value={searchInput}
         placeholder="Search By Coin Name"
-        onChange={(e) => setSearchInput(e.target.value)}
+        onChange={(e) => {
+          setSearchInput(e.target.value);
+          setCurrentPage(1);
+        }}
         title="Search Through Vast No of Coins"
       />
       <button
@@ -65,19 +68,18 @@ function CryptoCurrency() {
       >
         Refresh
       </button>
-      <div>
-        {isLoading && (
-          <div>
-            <h1>Loading...</h1>
-          </div>
-        )}
-      </div>
-      {error ? (
-        <div>{error}</div>
+      {isLoading ? (
+        <div>
+          <h1 className="loader">Loading...</h1>
+        </div>
+      ) : error ? (
+        <div>
+          <h1 className="err-state">Unable to Fetch Coins</h1>
+        </div>
       ) : (
         <div className="coin-container">
           {currentCoins.map((coin) => (
-            <CoinCard coin={coin} />
+            <CoinCard key={coin.id} coin={coin} />
           ))}
         </div>
       )}
